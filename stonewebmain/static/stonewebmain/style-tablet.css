@@ -1,0 +1,100 @@
+/*
+**************************
+
+TABLET STYLES
+
+**************************
+*/
+
+@media only screen and (min-width: 700px) {
+
+    /* Fonts */
+
+    p, small {
+
+        font-weight: 200;
+        font-size: 1.5rem;
+    
+    }
+    
+    h1.page {
+        font-size: 3rem;
+    }
+
+    h1.nimi {
+        font-size: 2.5rem;
+    }
+    
+    h4.aihe {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    h4.intro {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+    
+    
+    button.cta {
+        font-size: 1.5rem;
+    }
+
+        /*
+    **************************
+    
+    Content sizing
+    
+    **************************
+    */
+    
+    div.fp-content{
+        margin: 100px;
+    }
+
+    div.content {
+        padding: 0 30px;
+    }
+
+    div.content::-webkit-scrollbar {
+        display: block;
+      }
+
+    .yhteys svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    img.omakuva {
+        width: 200px;
+        height: 200px;
+        z-index: 0;
+    }
+
+    /*
+    **************************
+
+    Portfolio Gallery
+
+    **************************
+    */
+
+    div.gallery-img-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 141px;
+        height: 141px;
+        background-color: #f5f5f521;
+        backdrop-filter: blur(2px);
+        border-radius: 10px;
+        z-index: 0;
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+
+}

@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+
+            <img src="{% static 'stonewebmain/IMG_20220526_184013.jpg' %}" alt="" class="omakuva">
+            <div class="content content-koodaus-sivu">
+           
+            <a href="{{ object.get_previus_by_slug.get_absolute_url }}"><img src="{% static 'stonewebmain/arrow-left.svg' %}" alt="" class="arrow arrow-koodaus-page" id="arrow-koodaus-left"></a>
+            <a href="{{ object.get_next_by_slug.get_absolute_url }}"><img src="{% static 'stonewebmain/arrow-right.svg' %}" alt="" class="arrow arrow-koodaus-page" id="arrow-koodaus-right">  </a> 
+                <h1 class="page">{{ object.Artikkelin_otsikko }}</h1>
+                <h2>{{ object.koodikielet }}</h2>
+                <img src="{{ object.Article_img.url }}" alt="" class="koodaus-page-img">
+                <div class="article-body">
+                  {{ object.article_text | safe }}
+                </div>
+                
+
+                        
+            </div>
+
+                
+  {% endblock content%}

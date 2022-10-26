@@ -1,0 +1,108 @@
+@media only screen and (min-width: 850px) {
+
+    .grid-container {
+        grid-template-columns: 2fr 10fr 4fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*
+    **************************
+
+    HEADER
+
+    **************************
+    */
+
+
+    div.header {
+        grid-row: 1/3;
+        grid-column: 3/4;
+        position: relative;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 100%;
+        padding: 0 10% 0 10%;
+        background-image: none;
+        background-color: var(--hover-bg-color);
+        z-index: 10;
+    }
+
+    div.header-contact-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .yhteys-wrapper a svg {
+        width: 90%;
+        height: 90%;
+    }
+
+    div.yhteys-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-grow: unset;
+        margin-top: 0;
+    }
+
+    div.nimi-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-grow:unset;
+        margin-top: 250px;
+    }
+
+    img.omakuva {
+        display: block;
+        position: absolute;
+        right: calc(1/16*100% *2);
+        top: 4vh;
+        width: 160px;
+        height: 160px;
+        border-radius: 100%;
+        background-color: #DDFFFF;
+        object-fit: cover;
+        object-position: 20% 80%;
+        z-index: 11;
+        transform: translateX(50%);
+    }
+
+    div.fp-content {
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+
+    div.content {
+        grid-row: 1/3;
+        grid-column: 2/3;
+        padding: 7vh 10%;
+    }
+
+    div.content::-webkit-scrollbar {
+        display: block;
+      }
+
+    div.navigation {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        background-color: #030918cb;
+        padding: 100px 0 100px 0;
+    }
+
+    .navigation svg {
+        width: 75px;
+        height: 75px;
+    }
+
+
+
+
+ }

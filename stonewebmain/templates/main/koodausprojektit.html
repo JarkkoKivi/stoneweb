@@ -1,0 +1,26 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+
+
+            <div class="content content-koodaus">
+              <img src="{% static 'stonewebmain/IMG_20220526_184013.jpg' %}" alt="" class="omakuva">
+                <h1 class="page">Koodaus projektit</h1>
+
+                {% for article in object_list %}
+                
+                <a href="{{ article.get_absolute_url }}" class="koodaus-sample-link">
+                    <div class="koodaus-lista-obj">
+                        <div class="koodaus-lista-teksti">
+                        <h4>{{ article.Artikkelin_otsikko }}</h4>
+                        <h5>{{ article.koodikielet }}
+                        </h5>
+                        </div>
+                        <img src="{{ article.Article_img.url  }}" alt="" class="koodaus-sample-img">
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+
+            {% endblock content %}
+            
